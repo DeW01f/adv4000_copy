@@ -44,7 +44,7 @@ jobs:
     needs: [my_testing]
     env:
       VAR1 : "This is Job Level Variable1"
-      VAR2 : "This is Job Lebel Variable2"
+      VAR2 : "This is Job Level Variable2"
     
     steps:
     - name: Print Hello Message in Deploy Job
@@ -60,7 +60,7 @@ jobs:
 
     
     - name: Printing Deployment package
-      run : echo "Deplyo pakcage name is ${{ env.DEPLOY_PACKAGE_NAME }}"
+      run : echo "Deploy pakcage name is ${{ env.DEPLOY_PACKAGE_NAME }}"
     
     - name: Lets test some packages if they are here 1
       run : aws --version
