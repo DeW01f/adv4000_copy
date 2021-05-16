@@ -47,7 +47,7 @@ jobs:
       VAR2 : "This is Job Lebel Variable2"
     
     steps:
-    - name: Print Hello Message in Deploy
+    - name: Print Hello Message in Deploy Job
       run : echo "Hello World from Deploy job"
       
     - name: Print env vars
